@@ -46,8 +46,7 @@ export default new Vuex.Store({
             commit('ADD_TODO')
         },
         editTodo({commit}, todo){
-            api.updateTodo(todo.id, todo)
-            // commit('EDIT_TODO', todo)
+            commit('EDIT_TODO', todo)
         },
         removeTodo({commit}, todo){
             commit('REMOVE_TODO', todo)
